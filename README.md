@@ -1,14 +1,14 @@
-#Setting up an Express.js server
+Setting up an Express.js server
 
 first step: To set up a Node.js app server, create a directory for the project to live in.
 
-###mkdir apicrud-node-postgres
-###cd apicrud-node-postgres
+mkdir apicrud-node-postgres
+cd apicrud-node-postgres
 
 
 second step: We are going to install body-parser cors express pg pg-hstore sequelize.
 
-###npm i body-parser cors express pg pg-hstore sequelize
+npm i body-parser cors express pg pg-hstore sequelize
 
 third step: we can either run npm init or npm init -y to create a package.json.
 
@@ -37,7 +37,7 @@ third step: we can either run npm init or npm init -y to create a package.json.
 
 
 
-###CREATE DATABASE userdb
+CREATE DATABASE userdb
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -48,7 +48,7 @@ third step: we can either run npm init or npm init -y to create a package.json.
 
 
 
-###CREATE TABLE public.tblmstuser
+CREATE TABLE public.tblmstuser
 (
     userid integer NOT NULL DEFAULT nextval('tblmstuser_userid_seq'::regclass),
     cardid character varying(15) COLLATE pg_catalog."default",
@@ -72,7 +72,7 @@ ALTER TABLE public.tblmstuser
     OWNER to postgres;
 
 
-###INSERT INTO public.tblmstuser(
+INSERT INTO public.tblmstuser(
 	cardid, firstname, lastname, fullname, username, password, userlevelid, jobid, deptid, status)
 	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?
 ); 
