@@ -30,7 +30,7 @@ third step: we can either run npm init or npm init -y to create a package.json.
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "http://github/bedsongultom/",
+  "author": "http://github.com/bedsongultom/",
   "license": "ISC"
 }
 
