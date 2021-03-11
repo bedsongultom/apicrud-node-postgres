@@ -55,7 +55,7 @@ we can either run npm init or npm init -y to create a package.json{
 
 ## CREATE TABLE public.tblmstuser 
 
-    userid integer NOT NULL DEFAULT nextval('tblmstuser_userid_seq'::regclass),
+    {userid integer NOT NULL DEFAULT nextval('tblmstuser_userid_seq'::regclass),
     cardid character varying(15) COLLATE pg_catalog."default",
     firstname character varying(20) COLLATE pg_catalog."default",
     lastname character varying(30) COLLATE pg_catalog."default",
@@ -66,20 +66,20 @@ we can either run npm init or npm init -y to create a package.json{
     jobid integer,
     deptid integer,
     status character varying(1) COLLATE pg_catalog."default" DEFAULT 0,
-    CONSTRAINT tblmstuser_pkey PRIMARY KEY (userid)
+    CONSTRAINT tblmstuser_pkey PRIMARY KEY (userid)}
 
-WITH 
+WITH( 
     OIDS = FALSE
-
+)
 TABLESPACE pg_default;
 
 ## ALTER TABLE public.tblmstuser
     OWNER to postgres;
 
 
-## INSERT INTO public.tblmstuser(
-	cardid, firstname, lastname, fullname, username, password, userlevelid, jobid, deptid, status)
-	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?
-); 
+## INSERT INTO public.tblmstuser
+	(cardid, firstname, lastname, fullname, username, password, userlevelid, jobid, deptid, status)
+	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
 
 
