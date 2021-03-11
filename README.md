@@ -4,8 +4,8 @@ Setting up an Express.js server
 
 ## first step
  To set up a Express.js app server, create a directory for the project
- ``` mkdir apicrud-node-postgres
- ``` cd apicrud-node-postgres
+ ` mkdir apicrud-node-postgres
+  cd apicrud-node-postgres
 
 
 ## second step
