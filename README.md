@@ -2,17 +2,20 @@
 
 Setting up an Express.js server
 
-first step: To set up a Express.js app server, create a directory for the project to live in.**
+## first step
+To set up a Express.js app server, create a directory for the project to live in.**
 
 mkdir apicrud-node-postgres
 cd apicrud-node-postgres
 
 
-second step: We are going to install body-parser cors express pg pg-hstore sequelize.
+## second step
+We are going to install body-parser cors express pg pg-hstore sequelize.
 
 npm i body-parser cors express pg pg-hstore sequelize
 
-third step: we can either run npm init or npm init -y to create a package.json.
+## third step
+we can either run npm init or npm init -y to create a package.json.
 
 {
   "name": "apicrud-node-postgres",
@@ -38,8 +41,9 @@ third step: we can either run npm init or npm init -y to create a package.json.
 
 
 
+# CREATE DATABASE
 
-CREATE DATABASE userdb
+## CREATE DATABASE userdb
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -50,7 +54,7 @@ CREATE DATABASE userdb
 
 
 
-CREATE TABLE public.tblmstuser
+## CREATE TABLE public.tblmstuser
 (
     userid integer NOT NULL DEFAULT nextval('tblmstuser_userid_seq'::regclass),
     cardid character varying(15) COLLATE pg_catalog."default",
@@ -70,11 +74,11 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public.tblmstuser
+## ALTER TABLE public.tblmstuser
     OWNER to postgres;
 
 
-INSERT INTO public.tblmstuser(
+## INSERT INTO public.tblmstuser(
 	cardid, firstname, lastname, fullname, username, password, userlevelid, jobid, deptid, status)
 	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?
 ); 
