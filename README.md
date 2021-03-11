@@ -15,9 +15,8 @@ We are going to install body-parser cors express pg pg-hstore sequelize.
 npm i body-parser cors express pg pg-hstore sequelize
 
 ## third step
-we can either run npm init or npm init -y to create a package.json{
-
-  "name": "apicrud-node-postgres",
+we can either run npm init or npm init -y to create a package.json
+ ## {"name": "apicrud-node-postgres",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
