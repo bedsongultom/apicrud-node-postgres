@@ -15,9 +15,8 @@ We are going to install body-parser cors express pg pg-hstore sequelize.
 npm i body-parser cors express pg pg-hstore sequelize
 
 ## third step
-we can either run npm init or npm init -y to create a package.json
+we can either run npm init or npm init -y to create a package.json{
 
-## {
   "name": "apicrud-node-postgres",
   "version": "1.0.0",
   "description": "",
@@ -54,8 +53,8 @@ we can either run npm init or npm init -y to create a package.json
 
 
 
-## CREATE TABLE public.tblmstuser
-(
+## CREATE TABLE public.tblmstuser 
+
     userid integer NOT NULL DEFAULT nextval('tblmstuser_userid_seq'::regclass),
     cardid character varying(15) COLLATE pg_catalog."default",
     firstname character varying(20) COLLATE pg_catalog."default",
@@ -68,10 +67,10 @@ we can either run npm init or npm init -y to create a package.json
     deptid integer,
     status character varying(1) COLLATE pg_catalog."default" DEFAULT 0,
     CONSTRAINT tblmstuser_pkey PRIMARY KEY (userid)
-)
-WITH (
+
+WITH 
     OIDS = FALSE
-)
+
 TABLESPACE pg_default;
 
 ## ALTER TABLE public.tblmstuser
