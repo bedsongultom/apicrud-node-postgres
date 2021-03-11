@@ -3,7 +3,7 @@
 Setting up an Express.js server
 
 ## first step
-To set up a Express.js app server, create a directory for the project to live in.**
+To set up a Express.js app server, create a directory for the project to live in.
 
 mkdir apicrud-node-postgres
 cd apicrud-node-postgres
@@ -15,7 +15,7 @@ We are going to install body-parser cors express pg pg-hstore sequelize.
 npm i body-parser cors express pg pg-hstore sequelize
 
 ## third step
-we can either run npm init or npm init -y to create a package.json.
+we can either run npm init or npm init -y to create a package.json
 
 {
   "name": "apicrud-node-postgres",
