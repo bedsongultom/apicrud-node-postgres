@@ -1,7 +1,7 @@
 # apicrud-node-postgres 
 
-***Setting up an Express.js server
-
+Setting up an Express.js server
+===================================
 ## first step
  To set up a Express.js app server, create a directory for the project
  mkdir apicrud-node-postgres
